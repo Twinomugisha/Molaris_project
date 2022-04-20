@@ -6,11 +6,13 @@ import './App.css';
 
 const App = () => {
   return(
+    <div className="appDiv">
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/player" element={<Player />} />
+      <Route path="/player" element={<Player/>} />
     </Routes>
-  )
+    </div>
+  ) 
 };
 
 export default App;
