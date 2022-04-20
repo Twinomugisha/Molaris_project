@@ -2,6 +2,11 @@
 import titanics from "../images/titanicScene.png";
 import tita from "../images/tit.png";
 import movieLogo from "../images/movieLogo.png"; 
+import lucy from "../images/lucy.png";
+import shrek from "../images/shrek.png";
+import jam from "../images/jam.png";
+import hob from "../images/hob.png";
+import wolf from "../images/wolf.png";
 export const movies=[
     {
 
@@ -16,43 +21,110 @@ export const movies=[
     year:"1998",
     Duration:"3h 14min",    
     },
-    {
-
-        movie:"sceneImg",
-        Thumnbnail:tita,
-        Scene:titanics,
-        Logo:movieLogo,
-        Name:"Titanic",
-        Description:"bbbbbbbbbb",
-        Genre:"Romance,Drama",
-        Actors:"Kate Winslet,Leonardo DiCaprio",
-        year:"1998",
-        Duration:"3h 14min",    
-        },
-        {
-
-            movie:"sceneImg",
-            Thumnbnail:tita,
-            Scene:titanics,
-            Logo:movieLogo,
-            Name:"Titanic",
-            Description:"bbbbbbbbbb",
+     {
+            movie:"",
+           Thumnbnail:shrek,
+           Scene:"",
+           Logo:"",
+           Name:"",
+           Description:"bbbbbbbbbb",
+           Genre:"Romance,Drama",
+           Actors:"Kate Winslet,Leonardo DiCaprio",
+           year:"1998",
+           Duration:"3h 14min",      
+           },
+           {
+            movie:"jam",
+           Thumnbnail:jam,
+           Scene:"",
+           Logo:"",
+           Name:"",
+           Description:"bbbbbbbbbb",
+           Genre:"Romance,Drama",
+           Actors:"Kate Winslet,Leonardo DiCaprio",
+           year:"1998",
+           Duration:"3h 14min",      
+           },
+           {
+            movie:"",
+           Thumnbnail:hob,
+           Scene:"",
+           Logo:"",
+           Name:"",
+           Description:"bbbbbbbbbb",
+           Genre:"Romance,Drama",
+           Actors:"Kate Winslet,Leonardo DiCaprio",
+           year:"1998",
+           Duration:"3h 14min",      
+           },
+           {
+            movie:"",
+           Thumnbnail:lucy,
+           Scene:"",
+           Logo:"",
+           Name:"",
+           Description:"bbbbbbbbbb",
+           Genre:"Romance,Drama",
+           Actors:"Kate Winslet,Leonardo DiCaprio",
+           year:"1998",
+           Duration:"3h 14min",   
+           },
+          
+           {
+            movie:"",
+           Thumnbnail:wolf,
+           Scene:"",
+           Logo:"",
+           Name:"",
+           Description:"bbbbbbbbbb",
+           Genre:"Romance,Drama",
+           Actors:"Kate Winslet,Leonardo DiCaprio",
+           year:"1998",
+           Duration:"3h 14min",      
+           },
+           {
+            movie:"",
+           Thumnbnail:hob,
+           Scene:"",
+           Logo:"",
+           Name:"",
+           Description:"bbbbbbbbbb",
+           Genre:"Romance,Drama",
+           Actors:"Kate Winslet,Leonardo DiCaprio",
+           year:"1998",
+           Duration:"3h 14min",     
+           },
+           {
+            movie:"",
+           Thumnbnail:lucy,
+           Name:"",
+           Description:"bbbbbbbbbb",
             Genre:"Romance,Drama",
             Actors:"Kate Winslet,Leonardo DiCaprio",
             year:"1998",
-            Duration:"3h 14min",    
-            },
-            {
-
-                movie:"sceneImg",
-                Thumnbnail:tita,
-                Scene:titanics,
-                Logo:movieLogo,
-                Name:"Titanic",
-                Description:"bbbbbbbbbb",
-                Genre:"Romance,Drama",
-                Actors:"Kate Winslet,Leonardo DiCaprio",
-                year:"1998",
-                Duration:"3h 14min",    
-                },
+            Duration:"3h 14min",      
+           },
+          
+           {
+            movie:"",
+           Thumnbnail:wolf,
+           Name:"",
+           Description:"bbbbbbbbbb",
+           Genre:"Romance,Drama",
+           Actors:"Kate Winslet,Leonardo DiCaprio",
+           year:"1998",
+           Duration:"3h 14min",      
+           },
+           {
+            movie:"hob",
+           Thumnbnail:hob,
+           Scene:"",
+           Logo:"",
+           Name:"",
+           Description:"bbbbbbbbbb",
+           Genre:"Romance,Drama",
+           Actors:"Kate Winslet,Leonardo DiCaprio",
+           year:"1998",
+           Duration:"3h 14min",      
+           },
 ];
