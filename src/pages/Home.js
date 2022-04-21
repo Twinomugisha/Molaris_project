@@ -1,4 +1,4 @@
-import React from 'react';
+ import React, { useEffect } from 'react';
 import { Link } from "react-router-dom";
 import "./Home.css";
 import{Logo} from "../images/Netflix";
@@ -7,12 +7,27 @@ import{movies} from "../helpers/library";
 import{useState} from "react";
 import {useMoralis } from 'react-moralis';
 import Title from 'antd/lib/skeleton/Title';
+import Moralis from 'moralis/types';
 const Home = () => {
   const[visible,setVisible]=useState(false);
   const[selectedFilm,setSelectedFilm]=useState();
-  const{isAuthenticated}= useMoralis();
+  const[myMovies,setMyMovies] =useState();
+    const{isAuthenticated,Moralis,account}= useMoralis();
+
+  useEffect(()=>{
+    async function fetchMyList()
+    {
+    const thelist=await Moralis.Cloud.run["getMylist",{addrs:account}];
+    
+  const filterdA=movies.filter(function(e){
+    return thelist.indexof(e.Name)> -1;
+  })
+  setMyMovies(filterdA);
+}
+  fetchMyList
+},[account])
   const dispatch=useNotification();
-  const handleNewNotification =()=>{
+  const handleNewNotification = ()=>{
     dispatch({
     type:"error",
     Title:"please connect Your crypto Wallet",
@@ -54,7 +69,7 @@ return(
         text="Add to My List"
         theme="translucent"
         type="button"
-       onClick={()=>console.log(isAuthenticated)}
+       onClick={()=>console.log(myMovies)}
         />
       </div>
       </div>
